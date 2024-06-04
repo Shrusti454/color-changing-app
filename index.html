@@ -1,0 +1,38 @@
+<html>
+<head>
+   <title> Color App By Shrusti Tambe </title>
+    <style>
+           *{font-size:50px;}
+         .btn{background-color:green;color:white;border-radius:20px;margin-left:100px;}
+
+    </style>
+</head>
+<body>
+<center>
+         <h1> Color App </h1>
+         <form onsubmit="color()">
+         <input type="submit" value="YellowGreen"/>
+         <input type="submit" value="OliveDrab"/>
+         <input type="submit" value="ForestGreen" />
+         </form>
+  
+    <script>
+             function color()
+           {
+            event.preventDefault();
+            let ele= document.activeElement.value;
+            if(ele=="YellowGreen")
+              document.body.style.backgroundColor="YellowGreen";
+            else if(ele=="OliveDrab")
+              document.body.style.backgroundColor="OliveDrab";
+            else if(ele=="ForestGreen")
+               document.body.style.backgroundColor="ForestGreen";
+
+
+           }
+ 
+  </script>
+</center>
+</body>
+</html>
+           
